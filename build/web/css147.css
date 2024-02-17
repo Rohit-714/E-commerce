@@ -1,0 +1,365 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Jan, 2023, 1:46:51 PM
+    Author     : DELL
+*/
+
+nav{
+    padding: 10px 10px 25px 10px;
+    background-color:rgba(247, 0, 124, 1);
+    
+    border-radius: 4px;
+    position:fixed;
+    top:0;
+    width:98%;
+}
+nav a{
+    padding:10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family:sans-serif;
+    color:white;
+}
+nav a:hover{
+    background-color: rgba(255,255,255,0.6);
+    border-radius:4px;
+}
+#dropdown-content{
+    display:none;
+    position: absolute;
+    float:none;
+    background-color:white;
+    color:black;
+}
+#dropdown:hover #dropdown-content{
+    display: block;
+}
+#search-value{
+    border:none;
+  
+    font-size: 14px;
+    border-radius: 6px;
+    padding:8px;
+    padding-left:15px;
+    background-color:snow;
+}
+
+#right-side{
+   float:  right;
+}
+body{
+   background-color:snow;
+}
+
+#topbox{
+    display: flex;
+    flex-wrap:wrap;
+     margin:1%;
+    justify-content: center;
+  border: 2px solid black;
+  padding:0%;
+  border: none;
+ background-image:  linear-gradient(to bottom,rgb(255,255,255,0),rgb(255,255,255,0),rgb(255, 255, 255,1 )), url(https://m.media-amazon.com/images/I/91lQ01zCsjL._SX3000_.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% ;
+}
+
+#category{
+    display: flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin:0% 3%;
+    justify-content:center;
+  border: 2px solid black;
+  padding:0%;
+  border: none;
+  background-color: white;
+}
+
+#category-1{
+    margin:0.5%;
+    margin-top:250px;
+    padding:0.2%;
+    width:20%;
+    justify-content: center;
+    background-color:white;
+    text-align: center;
+    border-radius:6px;
+    box-shadow:0px 2px 8px 0px rgb(0,0,0,0.6);
+    transition: border 0.2s;
+}
+#category-3{
+    margin:0px 9px;
+    padding:5px;
+    justify-content: center;
+    background-color:mintcream;
+    text-align: center;
+    border-radius:4px;
+    box-shadow:0px 2px 8px 0px rgb(0,0,0,0.0);
+    transition:margin 0.2s;
+}
+#category-1:hover{
+    border:black 2px;
+    box-shadow:0px 2px 8px 0px rgba(247, 0, 124, 1);
+}
+#category-2{
+    margin:0px 9px;
+    padding:0px 10px;
+    justify-content: center;
+    background-color:  #ABDCBB;
+    text-align: center;
+    border-radius:4px;
+    box-shadow:0px 2px 8px 0px rgb(0,0,0,0.0);
+    transition: margin 0.2s, padding 0.4s;
+}
+#category-2:hover{
+    margin-top: -30px;
+    padding: 5px 20px;
+}
+
+#category-3:hover{
+    margin-top:-30px;
+    border-radius:10px 10px 0px 0px;
+    font-weight: 100px;
+    background-color:honeydew;
+}
+
+#category-4{
+    margin:0px 9px;
+    padding:5px;
+    justify-content: center;
+    background-color:azure;
+    text-align: center;
+    border-radius:4px;
+    box-shadow:0px 2px 8px 0px rgb(0,0,0,0.0);
+    transition: margin 0.2s;
+}
+#category-4:hover{
+    margin-top:-30px;
+    border-radius:10px 10px 0px 0px;
+    font-weight: 100px;
+    background-color:rgba(255,103,234,0.7904411764705882);
+}
+#category-5{
+    margin:0px 9px;
+    padding:5px;
+    justify-content: center;
+    background-color:#effa63;
+    text-align: center;
+    border-radius:4px;
+    box-shadow:0px 2px 8px 0px rgb(0,0,0,0.0);
+    transition: margin 0.2s;
+    width:15%;
+}
+img{
+    width:200px;
+}
+#category-5:hover{
+    margin-top:-30px;
+    border-radius:10px 10px 0px 0px;
+    font-weight:100;
+    background-color: rgba(96,239,22,1);
+}
+#first-display{
+    width:100%;
+    height: 70%;
+}
+#product-box{
+    display: flex;
+    flex-wrap:wrap;
+  background-image:url(https://img.freepik.com/free-vector/hand-drawn-minimal-background_23-2149007819.jpg?w=1060&t=st=1676901697~exp=1676902297~hmac=92cacd570362326853e1ad5480b514ee013e4b01504ab74dff2e5f476c8603eb);  
+  background-repeat: no-repeat;
+  background-size: 100%;  
+  width:98%;
+    height: 80%;
+    box-shadow:0px 2px 8px 0px black ;
+    border-radius: 4%;
+}
+#product-detail{
+width:50%;
+border: 2px;
+border-color: black;
+}
+#product-detail table{
+    width:70%;
+    height: 40%;
+    
+    padding: 1% 10%;
+    border-radius: 4%;
+    
+}
+#product-detail td{
+    width:10%;
+    padding:10px 50px;
+    align-content:center;
+}
+#que{
+    font-size: 20px;
+    font-family:Lucida Handwriting;
+}
+#ans{
+    font-size: 20px;
+    font-family: Sitka Small;
+}
+#table-head{
+    background-color:#00d4ff;
+    border-radius:10px;
+     
+}
+#add-button{
+    padding: 5px 20px;
+    background-color: hsl(120, 100%, 50%);
+    border-color:graytext;
+    border-radius: 4px;
+    font-size: 20px;
+    box-shadow: 3px 2px 7px 0px hsl(120, 100%, 80%) ;
+    transition:padding 0.3s;
+}
+#add-button:hover{
+     box-shadow: 5px 3px 9px 0px hsl(120, 100%, 80%) ;
+     background-color:hsl(120, 100%,60%);
+    padding: 6px 22px;
+}
+#big-pic{
+    height: 400px;
+    width:380px;
+    margin-top: 20px;
+}
+#buy-button ,#addcart-button{
+    padding:10px 20px;
+    text-align: center;
+    background-color:#2CFD47;
+    text-align: center;
+    width:200px;
+    font-weight:bolder;
+    font-size:15px;
+    border-radius:6px;
+    box-shadow: -2px 4px 10px rgba(0,0,0,0.3);
+    border-style:none;
+    margin:6px;
+    
+}
+::placeholder{
+    color:white;
+}
+#buy-button{
+      background-color:#2CFD47;
+}
+
+#addcart-button{
+    background-color:#FF1818; 
+   }
+#addcart-button:hover,#buy-button:hover{
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.4); 
+}
+#heading{
+    margin-left:4%;
+        font-size:30px;
+        font-family:inherit;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+ #outerbox{
+            background-image: linear-gradient( 68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2% );
+            background-size: 120%;
+            background-repeat: no-repeat;
+            width:60%;  
+            padding: 30px;
+            color:black;
+            border-radius:10px;
+            margin:4%;
+            display:flex;
+            flex-wrap: wrap;
+            border-style:solid;
+            
+        }
+        #innerbox-1{
+           background-image: linear-gradient( 68.4deg,  rgba(99,251,215,1) -0.4%, rgba(5,222,250,1) 100.2% );
+           width: 50%;
+        }
+        #innerbox-1 input{
+              outline:none;
+              background:inherit;
+              border:0px;
+              border-bottom:2px solid black;
+              color:white;
+              font-size:19px;
+              font-weight: 300;
+        }
+        #innerbox-1 textArea{
+            
+            font-size:15px;
+            background: inherit;
+          
+        }
+        #innerbox-2{
+          
+            width:40%;
+            background-image: url("https://previews.123rf.com/images/robuart/robuart1712/robuart171200953/91101327-shopping-fun-for-everyone-cartoon-woman-with-cart.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            margin:20px;
+            margin-top: 40px;
+        }
+        
+        
+        
+         #collection-view{
+                display: flex;
+                flex-wrap:wrap;
+                justify-content: center;
+                
+            }
+          
+            #sidebar{
+                height:100%;
+                width:20%;
+            }
+            #items{
+                padding:2px;
+                height:341px;
+                width:250px;
+                background-color:white;
+                line-height: 2px;
+                border-style: solid;
+                border-width: 2px;
+                border-color:#e3e6e6;
+                border-radius:0px;
+                justify-content: center;
+                margin:10px;
+                transition:all 0.2s;
+                    }
+                     p{
+                        color:rgba(247, 0, 124, 0.9);
+                        font-size:25px;
+                        font-weight:300;
+                        margin-top:15px;
+                    }
+                    #MRP{
+                        text-decoration:line-through;
+                        }
+                        #discount{
+                            
+                            text-decoration: none;
+                        }
+                    #items:hover{
+                       
+                        border-radius:6px;
+                        box-shadow: 1px 2px 10px 4px #75dcff ;
+                                     }
+                                     
+               #img{
+                height:75%;
+                width:100%;
+                background-color: white;
+                border-radius: 0px;
+                margin-top:0px;
+               }
+               
+        
